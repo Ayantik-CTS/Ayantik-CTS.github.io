@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-weight: bold;
+        }
+        .header{
+            text-align: center;
+            padding-top: 20px;
+            background-color: aqua;
+            color: black;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            text-align: center;
+        }
+        .leftsidebar, .rightsidebar{
+            background-color: green;
+            font-family: 'Courier New', Courier, monospace;
+            color: whitesmoke;
+            width: 200px;
+            text-align: center;
+            padding: 400px 0px 0px;
+        }
+        .maincontent{
+            background-color: blue;
+            font-family: 'Courier New', Courier, monospace;
+            color: whitesmoke;
+            padding: 400px 0px 0px;
+            flex: 1;
+        }
+        .footer{
+            text-align: center;
+            background-color: aqua;
+            color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">Header</div>
+    <div class="main">
+        <div class="leftsidebar">LEFT BAR</div>
+        <div class="maincontent">MAIN CONTENT</div>
+        <div class="rightsidebar">RIGHT BAR</div>
+    </div>
+    <div class="footer">Footer</div>
+
+    </div>
+</body>
+</html>
